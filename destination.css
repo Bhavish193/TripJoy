@@ -1,0 +1,20 @@
+.dst-item{
+    padding-top: 40px;
+    padding-bottom: 1px;
+    margin-top: 0%;
+    object-fit: cover;
+    font-family: sans-serif;
+    display:block ;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 40px;
+    font-size: 2.4 rem;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    font-family: sans-serif;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: rgb(245, 199, 140);
+    color:black;
+    
+}
