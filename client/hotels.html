@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotels | TripJoy</title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/hotel.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="nav-logo">
+            <a href="index.html">
+                <img src="./assets/images/logo.jpg" alt="TripJoy">
+            </a>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="hotels.html">Hotels</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="booking.html" class="btn btn-primary">Book Now</a>
+    </div>
+</header>
+<main>
+    <!-- HERO -->
+    <section class="hotel-hero">
+        <div class="container">
+            <div class="hotel-hero-content">
+                <h1>Find Your Perfect Stay</h1>
+                <p>Luxury resorts, mountain retreats and budget-friendly hotels for every journey.</p>
+            </div>
+        </div>
+    </section>
+    <!-- SEARCH -->
+    <section class="hotel-search">
+        <div class="container">
+            <form class="hotel-search-form">
+                <input type="text" placeholder="Search hotels...">
+                <button class="btn btn-primary">Search</button>
+            </form>
+        </div>
+    </section>
+    <!-- FILTERS -->
+    <section class="hotel-filters">
+        <div class="container">
+            <button class="filter-btn">All</button>
+            <button class="filter-btn">Luxury</button>
+            <button class="filter-btn">Budget</button>
+            <button class="filter-btn">Resorts</button>
+            <button class="filter-btn">Family</button>
+            <button class="filter-btn">Business</button>
+        </div>
+    </section>
+    <!-- HOTEL GRID -->
+    <section class="hotel-list">
+        <div class="container">
+            <h2>Popular Hotels</h2>
+            <div class="hotel-grid">
+                <!-- JavaScript will generate cards later -->
+                <article class="hotel-card">
+                    <img src="./assets/images/GS.jpg" alt="Greystone Resort">
+                    <div class="hotel-info">
+                        <h3>Greystone Resort</h3>
+                        <p>Manali, Himachal Pradesh</p>
+                        <p>⭐ 4.9</p>
+                        <p class="hotel-price">₹5,999 / Night</p>
+                        <a href="booking.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- AMENITIES -->
+    <section class="amenities">
+        <div class="container">
+            <h2>Hotel Amenities</h2>
+            <div class="amenity-grid">
+                <div class="amenity-card">📶 Free Wi-Fi</div>
+                <div class="amenity-card">🍽 Restaurant</div>
+                <div class="amenity-card">🏊 Swimming Pool</div>
+                <div class="amenity-card">🚗 Parking</div>
+                <div class="amenity-card">💪 Gym</div>
+                <div class="amenity-card">🛎 Room Service</div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="container">
+        <hr>
+        <p>&copy; 2026 TripJoy. All Rights Reserved.</p>
+    </div>
+</footer>
+<div class="ai-assistant">
+    🤖
+</div>
+<script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Kashmir",
+        "location": "India",
+        "image": "./assets/images/Kashmir.jpg",
+        "days": "5 Days / 4 Nights",
+        "price": "₹18,999"
+    },
+    {
+        "name": "Goa",
+        "location": "India",
+        "image": "./assets/images/Goa.jpg",
+        "days": "4 Days / 3 Nights",
+        "price": "₹12,499"
+    },
+    {
+        "name": "Manali",
+        "location": "India",
+        "image": "./assets/images/Manali.jpg",
+        "days": "6 Days / 5 Nights",
+        "price": "₹15,999"
+    },
+    {
+        "name": "Kerala",
+        "location": "India",
+        "image": "./assets/images/Kerala.jpg",
+        "days": "5 Days / 4 Nights",
+        "price": "₹16,499"
+    },
+    {
+        "name": "Jaipur",
+        "location": "India",
+        "image": "./assets/images/Jaipur.jpg",
+        "days": "3 Days / 2 Nights",
+        "price": "₹9,999"
+    },
+    {
+        "name": "Darjeeling",
+        "location": "India",
+        "image": "./assets/images/Darjeeling.jpg",
+        "days": "5 Days / 4 Nights",
+        "price": "₹14,499"
+    }
+]

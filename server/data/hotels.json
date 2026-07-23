@@ -1,0 +1,30 @@
+[
+  {
+    "name": "The Greystone Resort",
+    "location": "Manali, Himachal Pradesh",
+    "image": "./assets/images/GS.jpg",
+    "rating": "4.9",
+    "price": "₹5,999"
+  },
+  {
+    "name": "Ocean Breeze Resort",
+    "location": "Goa",
+    "image": "./assets/images/goa-hotel.jpg",
+    "rating": "4.8",
+    "price": "₹4,499"
+  },
+  {
+    "name": "Royal Heritage Palace",
+    "location": "Jaipur, Rajasthan",
+    "image": "./assets/images/jaipur-hotel.jpg",
+    "rating": "4.7",
+    "price": "₹6,299"
+  },
+  {
+    "name": "Backwater Retreat",
+    "location": "Alleppey, Kerala",
+    "image": "./assets/images/kerala-hotel.jpg",
+    "rating": "4.9",
+    "price": "₹5,299"
+  }
+]

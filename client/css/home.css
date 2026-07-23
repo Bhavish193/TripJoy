@@ -1,0 +1,423 @@
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.45)
+    ),
+    url("../assets/images/Venice.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+/* HERO OVERLAY*/
+.hero-overlay {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+/* HERO CONTENT */
+.hero-content {
+    max-width: 650px;
+    color: var(--white);
+}
+/* TAGLINE */
+.tagline {
+    font-size: 1rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #E2E8F0;
+}
+/*  HERO HEADING*/
+.hero-content h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+/* HERO DESCRIPTION*/
+.hero-description {
+    font-size: 1.1rem;
+    margin-bottom: 35px;
+    max-width: 550px;
+}
+/* HERO BUTTONS*/
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/*SEARCH SECTION*/
+.search-section {
+    margin-top: -40px;
+    position: relative;
+    z-index: 100;
+}
+
+/* SEARCH FORM*/
+.search-form {
+    background: var(--white);
+    padding: 25px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    flex-wrap: wrap;
+}
+.search-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+    color: var(--dark-color);
+}
+
+/* INPUTS*/
+.search-form input,
+.search-form select {
+    flex: 1;
+    min-width: 180px;
+    padding: 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+}
+.search-form input:focus,
+.search-form select:focus {
+    border-color: var(--primary-color);
+}
+
+/* SEARCH BUTTON*/
+.search-form button {
+    border: none;
+    min-width: 150px;
+}
+
+/*STATISTICS*/
+.statistics {
+    padding: 80px 0;
+}
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+.stat-card {
+    background: var(--white);
+    padding: 35px 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+.stat-card:hover {
+    transform: translateY(-8px);
+}
+.stat-card h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.3rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+.stat-card p {
+    color: var(--gray);
+    font-size: 1rem;
+}
+
+/* DESTINATIONS SECTION*/
+.destinations {
+    padding: 80px 0;
+}
+.destination-cards {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+
+    /* Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) transparent;
+}
+
+/* DESTINATION CARD*/
+.destination-card {
+    background: var(--white);
+    width: 380px;
+    min-width: 360px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+.destination-card:hover {
+    transform: translateY(-10px);
+}
+.destination-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+.destination-info {
+    padding: 25px;
+}
+.destination-info h3 {
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 8px;
+}
+.destination-location {
+    color: var(--gray);
+    margin-bottom: 15px;
+}
+.destination-details {
+    color: var(--gray);
+    margin-bottom: 10px;
+}
+.destination-price {
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+/* DESTINATION SCROLLBAR */
+.destination-cards::-webkit-scrollbar {
+    height: 5px;
+}
+.destination-cards::-webkit-scrollbar-track {
+    background: transparent;
+}
+.destination-cards::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 50px;
+}
+.destination-cards::-webkit-scrollbar-thumb:hover {
+    background: #1D4ED8;
+}
+
+/* Firefox */
+.destination-cards {
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) #E2E8F0;
+}
+
+/*HOTELS SECTION*/
+.hotels {
+    padding: 80px 0;
+}
+.hotel-cards {
+    display: flex;
+    gap: 30px;
+}
+/*HOTEL CARD*/
+.hotel-card {
+    background: var(--white);
+    width: 350px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+.hotel-card:hover {
+    transform: translateY(-10px);
+}
+.hotel-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+.hotel-info {
+    padding: 25px;
+}
+.hotel-info h3 {
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 8px;
+}
+.hotel-location {
+    color: var(--gray);
+    margin-bottom: 12px;
+}
+.hotel-rating {
+    color: var(--gray);
+    margin-bottom: 10px;
+}
+.hotel-price {
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* SERVICES*/
+.services {
+    padding: 80px 0;
+}
+.services h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: "Poppins", sans-serif;
+}
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+.service-card {
+    background: var(--white);
+    padding: 35px 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+.service-card:hover {
+    transform: translateY(-10px);
+}
+.service-icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 20px;
+}
+.service-card h3 {
+    margin-bottom: 12px;
+    font-family: "Poppins", sans-serif;
+}
+.service-card p {
+    color: var(--gray);
+}
+
+/* WHY CHOOSE US*/
+.why-us {
+    padding: 80px 0;
+}
+.why-us h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: "Poppins", sans-serif;
+}
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+.feature-card {
+    background: var(--white);
+    padding: 35px 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: .3s ease;
+}
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+.feature-card h3 {
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+.feature-card p {
+    color: var(--gray);
+}
+
+/*TESTIMONIALS*/
+.testimonials {
+    padding: 80px 0;
+    background: var(--white);
+}
+.testimonials h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: "Poppins", sans-serif;
+}
+.review-cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.review-card {
+    width: 380px;
+    background: var(--light-color);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+}
+.review-card p {
+    color: var(--gray);
+    margin-bottom: 20px;
+    font-style: italic;
+}
+.review-card h4 {
+    color: var(--primary-color);
+}
+
+/*NEWSLETTER*/
+.newsletter {
+    padding: 80px 0;
+    text-align: center;
+}
+.newsletter h2 {
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+}
+.newsletter p {
+    margin-bottom: 30px;
+    color: var(--gray);
+}
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.newsletter-form input {
+    width: 350px;
+    padding: 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+}
+.newsletter-form button {
+    border: none;
+}
+
+/*PACKAGES*/
+.packages{
+    padding:70px 0;
+}
+.package-cards{
+    display:flex;
+    gap:30px;
+}
+.package-card{
+    width:350px;
+    background:var(--white);
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+.package-card:hover{
+    transform:translateY(-10px);
+}
+.package-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+.package-info{
+    padding:25px;
+}
+.package-info h3{
+    margin-bottom:10px;
+    font-family:"Poppins",sans-serif;
+}
+.package-price{
+    margin:18px 0;
+    color:var(--primary-color);
+    font-weight:700;
+}

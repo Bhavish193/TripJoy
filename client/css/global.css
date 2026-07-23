@@ -1,0 +1,221 @@
+/* GOOGLE FONT RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ROOT VARIABLES */
+:root {
+    --primary-color: #2563EB;
+    --secondary-color: #F97316;
+
+    --dark-color: #1E293B;
+    --light-color: #F8FAFC;
+
+    --white: #FFFFFF;
+    --gray: #64748B;
+
+    --max-width: 1290px;
+}
+
+/* GLOBAL STYLES */
+body {
+    font-family: "Inter", sans-serif;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+}
+
+/*REUSABLE CONTAINER */
+.container {
+    width: 90%;
+    max-width: var(--max-width);
+    margin: auto;
+}
+/* REUSABLE BUTTONS */
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s ease;
+   cursor: pointer;
+}
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+.btn-primary:hover {
+    background-color: #1D4ED8;
+}
+.btn-secondary {
+    background-color: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
+}
+.btn-secondary:hover {
+    background-color: var(--white);
+    color: var(--primary-color);
+}
+/* SECTION TITLE */
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.section-heading h2 {
+   font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+}
+.section-heading a {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/*HEADER*/
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px 0;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header.scrolled {
+    position: fixed;
+    background: rgba(30, 41, 59, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+    transition: .3s;
+}
+
+/*LOGO*/
+.nav-logo img {
+    width: 75px;
+    height: auto;
+}
+
+/* NAVIGATION */
+.navbar {
+    display: flex;
+    align-items: center;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+.nav-links a {
+    color: var(--white);
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+
+    color: var(--secondary-color);
+
+}
+
+/*NAVIGATION BUTTON */
+.header .btn {
+    margin-left: 30px;
+}
+
+/*FOOTER*/
+.footer {
+    background: var(--dark-color);
+    color: var(--white);
+    padding: 30px 0;
+    text-align: center;
+}
+
+/*AI ASSISTANT*/
+.ai-assistant {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 65px;
+    height: 65px;
+    background: var(--primary-color);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0,0,0,.25);
+    transition: .3s ease;
+    z-index: 1001;
+}
+.ai-assistant:hover {
+    transform: scale(1.1);
+}
+
+/* ================= CHAT POPUP ================= */
+.chat-popup {
+    position: fixed;
+    bottom: 105px;
+    right: 30px;
+    width: 320px;
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.15);
+    overflow: hidden;
+    display: none;
+    z-index: 1000;
+}
+.chat-popup.active {
+    display: block;
+}
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: var(--primary-color);
+    color: var(--white);
+}
+.chat-header button {
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.chat-body {
+    padding: 20px;
+    min-height: 180px;
+}
+.chat-input {
+    display: flex;
+    border-top: 1px solid #ddd;
+}
+.chat-input input {
+    flex: 1;
+    border: none;
+    padding: 12px;
+    outline: none;
+}
+.chat-input button {
+    border-radius: 0;
+}
