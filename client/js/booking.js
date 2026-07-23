@@ -12,19 +12,20 @@ bookingForm.addEventListener("submit", async (e) => {
     };
 
     try {
-        const response = await fetch("http://localhost:3000/api/bookings", {
+        const response = await fetch("https://tripjoy-production.up.railway.app/api/bookings", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify(bookingData)
         });
+
         const data = await response.json();
+
         if (data.success) {
             alert("✅ Booking Successful!");
             bookingForm.reset();
-        }
-        else {
+        } else {
             alert(data.message);
         }
     }

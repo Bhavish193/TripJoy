@@ -3,7 +3,7 @@ const cors = require("cors");
 
 const app = express();
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Routes
 const destinationRoutes = require("./routes/destinationRoutes");
@@ -26,5 +26,5 @@ app.use("/api/hotels", hotelRoutes);
 
 // Start Server
 app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`);
+    console.log(`Server running on port ${PORT}`);
 });
